@@ -349,21 +349,24 @@
                     </div>
                 </div>
 
-                <form class="contact-form" id="contactForm">
+                <form class="contact-form" id="contactForm"
+      action="https://formsubmit.co/mtharani0073@gmail.com"
+      method="POST">
+                    <input type="hidden" name="_captcha" value="false">
                     <div class="form-group">
                         <input type="text" id="name" placeholder="Your Name" required>
                         <span class="form-line"></span>
                     </div>
                     <div class="form-group">
-                        <input type="email" id="email" placeholder="Your Email" required>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
                         <span class="form-line"></span>
                     </div>
                     <div class="form-group">
-                        <input type="text" id="subject" placeholder="Subject" required>
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
                         <span class="form-line"></span>
                     </div>
                     <div class="form-group">
-                        <textarea id="message" placeholder="Your Message" rows="4" required></textarea>
+                       <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
                         <span class="form-line"></span>
                     </div>
                     <button type="submit" class="btn btn-primary btn-large">
