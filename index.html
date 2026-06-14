@@ -3,15 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Portfolio | Your Name</title>
+    <title>M. Tharani - Full Stack Developer Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="container">
             <div class="nav-wrapper">
-                <div class="logo">Portfolio</div>
+                <div class="logo">
+                    <i class="fas fa-code"></i>
+                    <span>M. Tharani</span>
+                </div>
                 <ul class="nav-menu">
                     <li><a href="#home" class="nav-link">Home</a></li>
                     <li><a href="#about" class="nav-link">About</a></li>
@@ -32,16 +36,31 @@
     <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1 class="hero-title">Welcome to My Portfolio</h1>
-                <p class="hero-subtitle">Full Stack Developer | UI/UX Designer | Problem Solver</p>
-                <p class="hero-description">Creating beautiful and functional digital experiences with modern technologies</p>
+                <div class="hero-greeting">Welcome to my portfolio</div>
+                <h1 class="hero-title">Hi, I'm <span class="gradient-text">M. Tharani</span></h1>
+                <p class="hero-subtitle">Full Stack Developer</p>
+                <p class="hero-description">
+                    Crafting elegant solutions to complex problems. Passionate about web development, 
+                    artificial intelligence, and building modern technologies that make a difference.
+                </p>
                 <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-arrow-down"></i> View My Work
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i> Get In Touch
+                    </a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://github.com/mtharani0073-code" target="_blank" class="social-icon" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
                 </div>
             </div>
             <div class="hero-animation">
-                <div class="floating-card"></div>
+                <div class="floating-box box-1"></div>
+                <div class="floating-box box-2"></div>
+                <div class="floating-box box-3"></div>
             </div>
         </div>
     </section>
@@ -49,32 +68,54 @@
     <!-- About Me Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            
             <div class="about-content">
                 <div class="about-text">
-                    <p class="about-description">
-                        I'm a passionate full-stack developer with a keen eye for design and a love for creating exceptional user experiences. With expertise in modern web technologies, I transform ideas into reality through clean, efficient code and intuitive design.
-                    </p>
-                    <p class="about-description">
-                        I believe in continuous learning and staying updated with the latest industry trends. My goal is to deliver solutions that not only meet technical requirements but also exceed user expectations.
-                    </p>
-                    <div class="about-stats">
-                        <div class="stat-card">
-                            <h3>50+</h3>
-                            <p>Projects Completed</p>
-                        </div>
-                        <div class="stat-card">
-                            <h3>30+</h3>
-                            <p>Happy Clients</p>
-                        </div>
-                        <div class="stat-card">
-                            <h3>5+</h3>
-                            <p>Years Experience</p>
-                        </div>
+                    <div class="about-card">
+                        <h3><i class="fas fa-lightbulb"></i> My Passion</h3>
+                        <p>
+                            I'm deeply passionate about web development and creating meaningful digital experiences. 
+                            I love transforming ideas into reality through clean, efficient code and intuitive design. 
+                            Every project is an opportunity to learn something new and push my boundaries.
+                        </p>
+                    </div>
+                    
+                    <div class="about-card">
+                        <h3><i class="fas fa-robot"></i> Interest in AI & Modern Tech</h3>
+                        <p>
+                            I'm fascinated by Artificial Intelligence and the emerging technologies that are 
+                            shaping the future. I actively explore AI integration, machine learning applications, 
+                            and cutting-edge tools like Composio to build intelligent systems.
+                        </p>
+                    </div>
+                    
+                    <div class="about-card">
+                        <h3><i class="fas fa-target"></i> Career Goals</h3>
+                        <p>
+                            My goal is to become a versatile full-stack developer who can bridge the gap between 
+                            beautiful UI/UX and robust backend systems. I aim to contribute to innovative projects 
+                            and mentor upcoming developers in the tech community.
+                        </p>
                     </div>
                 </div>
-                <div class="about-image">
-                    <div class="image-placeholder">Your Photo</div>
+                
+                <div class="about-stats">
+                    <div class="stat-box">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">5+</div>
+                        <div class="stat-label">Technologies</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Dedication</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -83,50 +124,75 @@
     <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
-            <h2 class="section-title">Skills & Expertise</h2>
+            <div class="section-header">
+                <h2 class="section-title">Skills & Expertise</h2>
+                <div class="section-line"></div>
+            </div>
+            
             <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Frontend Development</h3>
-                    <div class="skill-list">
-                        <span class="skill-tag">HTML5</span>
-                        <span class="skill-tag">CSS3</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">React</span>
-                        <span class="skill-tag">Vue.js</span>
-                        <span class="skill-tag">Responsive Design</span>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3>HTML</h3>
+                    <p>Semantic HTML5 markup and accessibility best practices</p>
+                    <div class="skill-level">
+                        <div class="level-bar" style="width: 95%;"></div>
                     </div>
                 </div>
-                <div class="skill-category">
-                    <h3>Backend Development</h3>
-                    <div class="skill-list">
-                        <span class="skill-tag">Node.js</span>
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">Express.js</span>
-                        <span class="skill-tag">MongoDB</span>
-                        <span class="skill-tag">PostgreSQL</span>
-                        <span class="skill-tag">REST APIs</span>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <h3>CSS</h3>
+                    <p>Responsive design, animations, and modern CSS frameworks</p>
+                    <div class="skill-level">
+                        <div class="level-bar" style="width: 90%;"></div>
                     </div>
                 </div>
-                <div class="skill-category">
-                    <h3>Tools & Technologies</h3>
-                    <div class="skill-list">
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">Docker</span>
-                        <span class="skill-tag">AWS</span>
-                        <span class="skill-tag">Figma</span>
-                        <span class="skill-tag">Linux</span>
-                        <span class="skill-tag">CI/CD</span>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                    <h3>JavaScript</h3>
+                    <p>ES6+, DOM manipulation, and async programming</p>
+                    <div class="skill-level">
+                        <div class="level-bar" style="width: 88%;"></div>
                     </div>
                 </div>
-                <div class="skill-category">
-                    <h3>Soft Skills</h3>
-                    <div class="skill-list">
-                        <span class="skill-tag">Problem Solving</span>
-                        <span class="skill-tag">Team Leadership</span>
-                        <span class="skill-tag">Communication</span>
-                        <span class="skill-tag">Project Management</span>
-                        <span class="skill-tag">Agile</span>
-                        <span class="skill-tag">Mentoring</span>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3>Python</h3>
+                    <p>Backend development and AI/ML applications</p>
+                    <div class="skill-level">
+                        <div class="level-bar" style="width: 85%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <h3>GitHub</h3>
+                    <p>Version control, collaboration, and project management</p>
+                    <div class="skill-level">
+                        <div class="level-bar" style="width: 92%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI & Composio</h3>
+                    <p>Building AI agents and intelligent automation</p>
+                    <div class="skill-level">
+                        <div class="level-bar" style="width: 80%;"></div>
                     </div>
                 </div>
             </div>
@@ -136,122 +202,96 @@
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title">Recent Projects</h2>
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-line"></div>
+            </div>
+            
             <div class="projects-grid">
                 <div class="project-card">
-                    <div class="project-image">
-                        <div class="image-placeholder-dark">Project 1</div>
-                    </div>
-                    <div class="project-info">
-                        <h3>E-Commerce Platform</h3>
-                        <p>A full-featured e-commerce platform built with React and Node.js, featuring product catalog, shopping cart, and secure payment integration.</p>
-                        <div class="project-tech">
-                            <span>React</span>
-                            <span>Node.js</span>
-                            <span>MongoDB</span>
-                            <span>Stripe</span>
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-globe"></i>
                         </div>
-                        <div class="project-links">
-                            <a href="#" class="link-btn">Live Demo</a>
-                            <a href="#" class="link-btn">GitHub</a>
+                        <div class="project-badges">
+                            <span class="badge">HTML</span>
+                            <span class="badge">CSS</span>
+                            <span class="badge">JavaScript</span>
                         </div>
                     </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="image-placeholder-dark">Project 2</div>
+                    <h3>Personal Portfolio Website</h3>
+                    <p>
+                        A modern, responsive portfolio website showcasing my skills, projects, and expertise. 
+                        Built with vanilla HTML, CSS, and JavaScript with smooth animations and interactive elements.
+                    </p>
+                    <div class="project-features">
+                        <span><i class="fas fa-check-circle"></i> Responsive Design</span>
+                        <span><i class="fas fa-check-circle"></i> Smooth Scrolling</span>
+                        <span><i class="fas fa-check-circle"></i> Modern Animations</span>
                     </div>
-                    <div class="project-info">
-                        <h3>Task Management App</h3>
-                        <p>A collaborative task management application with real-time updates, team collaboration features, and intuitive user interface.</p>
-                        <div class="project-tech">
-                            <span>Vue.js</span>
-                            <span>Firebase</span>
-                            <span>Tailwind CSS</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="link-btn">Live Demo</a>
-                            <a href="#" class="link-btn">GitHub</a>
-                        </div>
+                    <div class="project-links">
+                        <a href="https://mtharani0073-code.github.io/portfolio-website/" target="_blank" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                        <a href="https://github.com/mtharani0073-code/portfolio-website" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <div class="project-image">
-                        <div class="image-placeholder-dark">Project 3</div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Weather Dashboard</h3>
-                        <p>A responsive weather application that displays real-time weather data with beautiful visualizations and location-based forecasts.</p>
-                        <div class="project-tech">
-                            <span>JavaScript</span>
-                            <span>APIs</span>
-                            <span>CSS3</span>
-                            <span>Charts.js</span>
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-robot"></i>
                         </div>
-                        <div class="project-links">
-                            <a href="#" class="link-btn">Live Demo</a>
-                            <a href="#" class="link-btn">GitHub</a>
+                        <div class="project-badges">
+                            <span class="badge">Python</span>
+                            <span class="badge">AI</span>
+                            <span class="badge">Composio</span>
                         </div>
                     </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="image-placeholder-dark">Project 4</div>
+                    <h3>AI Agent using Composio</h3>
+                    <p>
+                        An intelligent AI agent built with Composio framework that can automate tasks and interact 
+                        with multiple APIs. Demonstrates advanced AI integration and intelligent automation capabilities.
+                    </p>
+                    <div class="project-features">
+                        <span><i class="fas fa-check-circle"></i> AI Powered</span>
+                        <span><i class="fas fa-check-circle"></i> API Integration</span>
+                        <span><i class="fas fa-check-circle"></i> Task Automation</span>
                     </div>
-                    <div class="project-info">
-                        <h3>Social Media Feed</h3>
-                        <p>A social media platform with user authentication, post creation, likes, comments, and real-time notifications.</p>
-                        <div class="project-tech">
-                            <span>React</span>
-                            <span>PostgreSQL</span>
-                            <span>Express</span>
-                            <span>Socket.io</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="link-btn">Live Demo</a>
-                            <a href="#" class="link-btn">GitHub</a>
-                        </div>
+                    <div class="project-links">
+                        <a href="https://github.com/mtharani0073-code" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <div class="project-image">
-                        <div class="image-placeholder-dark">Project 5</div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Fitness Tracker</h3>
-                        <p>A comprehensive fitness tracking application with workout logging, progress charts, and personalized fitness recommendations.</p>
-                        <div class="project-tech">
-                            <span>React Native</span>
-                            <span>Firebase</span>
-                            <span>Redux</span>
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-code-branch"></i>
                         </div>
-                        <div class="project-links">
-                            <a href="#" class="link-btn">Live Demo</a>
-                            <a href="#" class="link-btn">GitHub</a>
+                        <div class="project-badges">
+                            <span class="badge">GitHub Pages</span>
+                            <span class="badge">Deployment</span>
+                            <span class="badge">Git</span>
                         </div>
                     </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="image-placeholder-dark">Project 6</div>
+                    <h3>GitHub Pages Deployment</h3>
+                    <p>
+                        Expertise in deploying and hosting projects on GitHub Pages with custom domains and CI/CD pipelines. 
+                        Streamlined workflow for continuous deployment and version control best practices.
+                    </p>
+                    <div class="project-features">
+                        <span><i class="fas fa-check-circle"></i> Zero-Cost Hosting</span>
+                        <span><i class="fas fa-check-circle"></i> Custom Domains</span>
+                        <span><i class="fas fa-check-circle"></i> Auto Deployment</span>
                     </div>
-                    <div class="project-info">
-                        <h3>Blog Platform</h3>
-                        <p>A modern blogging platform with rich text editor, markdown support, categories, tags, and comment system.</p>
-                        <div class="project-tech">
-                            <span>Next.js</span>
-                            <span>Prisma</span>
-                            <span>PostgreSQL</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="link-btn">Live Demo</a>
-                            <a href="#" class="link-btn">GitHub</a>
-                        </div>
+                    <div class="project-links">
+                        <a href="https://github.com/mtharani0073-code" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
                     </div>
                 </div>
             </div>
@@ -261,39 +301,74 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
+            <div class="section-header">
+                <h2 class="section-title">Let's Connect</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">Have a project in mind? Let's work together!</p>
+            </div>
+            
             <div class="contact-content">
                 <div class="contact-info">
-                    <div class="info-card">
-                        <div class="info-icon">📧</div>
-                        <h3>Email</h3>
-                        <p>your.email@example.com</p>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>mtharani0073@gmail.com</p>
+                            <a href="mailto:mtharani0073@gmail.com" class="contact-link">
+                                Send an email <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
                     </div>
-                    <div class="info-card">
-                        <div class="info-icon">📱</div>
-                        <h3>Phone</h3>
-                        <p>+1 (555) 123-4567</p>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>GitHub</h3>
+                            <p>mtharani0073-code</p>
+                            <a href="https://github.com/mtharani0073-code" target="_blank" class="contact-link">
+                                Visit GitHub <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
                     </div>
-                    <div class="info-card">
-                        <div class="info-icon">📍</div>
-                        <h3>Location</h3>
-                        <p>San Francisco, California</p>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Portfolio</h3>
+                            <p>View my work</p>
+                            <a href="#projects" class="contact-link">
+                                Explore Projects <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
+
                 <form class="contact-form" id="contactForm">
                     <div class="form-group">
                         <input type="text" id="name" placeholder="Your Name" required>
+                        <span class="form-line"></span>
                     </div>
                     <div class="form-group">
                         <input type="email" id="email" placeholder="Your Email" required>
+                        <span class="form-line"></span>
                     </div>
                     <div class="form-group">
                         <input type="text" id="subject" placeholder="Subject" required>
+                        <span class="form-line"></span>
                     </div>
                     <div class="form-group">
-                        <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                        <textarea id="message" placeholder="Your Message" rows="4" required></textarea>
+                        <span class="form-line"></span>
                     </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <button type="submit" class="btn btn-primary btn-large">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
                 </form>
             </div>
         </div>
@@ -303,16 +378,38 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <p>&copy; 2024 Your Portfolio. All rights reserved.</p>
-                <div class="social-links">
-                    <a href="#" class="social-link">LinkedIn</a>
-                    <a href="#" class="social-link">GitHub</a>
-                    <a href="#" class="social-link">Twitter</a>
-                    <a href="#" class="social-link">Instagram</a>
+                <div class="footer-section">
+                    <h4>M. Tharani</h4>
+                    <p>Full Stack Developer | AI Enthusiast</p>
                 </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="footer-social">
+                        <a href="https://github.com/mtharani0073-code" target="_blank" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 M. Tharani. All rights reserved. | Crafted with <i class="fas fa-heart"></i> by M. Tharani</p>
             </div>
         </div>
     </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top" title="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
     <script src="script.js"></script>
 </body>
